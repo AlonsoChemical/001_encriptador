@@ -3,19 +3,19 @@ var mensajefinal = ["enter", "imes", "ai", "ober", "ufat"];
 
 function entradadem() {
     var mentrada = document.querySelector(".input-padron").value;
-    var msalida = document.querySelector('.mensajeresultado'); //selecciona en HTML clase mensajeresultado
+    var msalida = document.querySelector('.mensajeresultado'); 
 
     if (mentrada == "") {
-        document.querySelector(".cajaresultado").style.display = "block"; //aparece imagen munieco
-        msalida.textContent =  mentrada; //borra el mensaje anterior 
+        document.querySelector(".cajaresultado").style.display = "block";
+        msalida.textContent =  mentrada; 
         document.querySelector(".copiar").hidden = true; 
-        return //detiene funcion entradadem
+        return 
     }
     for (var i = 0 ; i<5 ; i++) {
         mentrada = mentrada.replaceAll (mensajeoriginal [i],mensajefinal[i]);
     }
-    document.querySelector(".cajaresultado").style.display = "none"; //oculta caja resultado
-    msalida.textContent = mentrada; //imprime en HTML el mensaje guardado en mentrada en la posucion de ,mensajeresultado 
+    document.querySelector(".cajaresultado").style.display = "none";
+    msalida.textContent = mentrada; 
     document.querySelector(".copiar").hidden = false; 
     return mentrada
 }
@@ -32,8 +32,8 @@ function desencriptarm() {
     for (var i = 0 ; i<5 ; i++) {
         mentrada = mentrada.replaceAll (mensajefinal [i], mensajeoriginal[i]);
     }
-    document.querySelector(".cajaresultado").style.display = "none"; //oculta caja resultado
-    msalida.textContent =  mentrada; //imprime en HTML el mensaje guardado en mentrada en la posucion de ,mensajeresultado 
+    document.querySelector(".cajaresultado").style.display = "none"; 
+    msalida.textContent =  mentrada; 
     document.querySelector(".copiar").hidden = false; 
     return mentrada
 }
