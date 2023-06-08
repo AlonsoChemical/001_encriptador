@@ -1,0 +1,126 @@
+body {
+ 
+    background: #F3F5FC;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    /*border: 3px solid black;*/
+}
+
+.logo {
+    margin: 0px 60px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+#mensaje {
+    width: 723px;
+    height: 673px;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    color: #0A3871;
+    background: #F3F5FC ;
+    position: absolute;
+    border: none;
+    left: 240px;
+    top: 168px;
+}
+
+.aviso {
+        position: absolute;
+    left: 240px;
+    top: 851px;
+    color: #495057;
+}
+
+.aviso:before {
+
+   content:  "⚠";
+
+}
+ 
+.encriptar {
+    position: absolute;
+    top: 885px;
+    left: 240px ;
+    width: 328px;
+    height: 4em;
+    padding: 15px 0;
+    font-size: 16px;
+    color: white;
+    background: #0A3871; /*hace boton naranja*/
+    border: none; /*quita border*/
+    border-radius: 24px; /*redondea el boton*/
+    transition: 1s all; /*hace que el cambio todo loq eu estan en enviar:hover se aplique en un seundo*/
+    cursor: pointer; /*cambia el mouse por una manita*/
+}
+
+.desencriptar {
+    position: absolute;
+    top: 885px;
+    left: 592px ;
+    width: 328px;
+    height: 4em;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background: #D8DFE8; /*hace boton naranja*/
+    border-radius: 24px; /*redondea el boton*/
+    transition: 1s all; /*hace que el cambio todo loq eu estan en enviar:hover se aplique en un seundo*/
+    cursor: pointer; /*cambia el mouse por una manita*/
+}
+
+
+.resultado {
+    background: white;
+    width: 400px;
+    height: 944px; 
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+    text-align: center;
+    box-shadow: 0px 10px 10px gray; /* ubicacion de sombra en ejehorizonta, vertical,, difuminado,  color de sombrea*/
+    border-radius: 40px 
+}
+
+.mensajeresultado {
+    margin: 50px 0px;
+    font-size: 1.5em;
+}
+
+.munieco {
+margin-top: 280px;
+}
+
+.resultado h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20px 0px;
+}
+
+.resultado p {
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+
+
+.copiar {
+    position: absolute;
+    top: 800px;
+    left: 40px;
+    width: 328px;
+    margin: 48px 0px;
+    width: 328px;
+    height: 4em;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    background: #0A3871; /*hace boton naranja*/
+    border: none; /*quita border*/
+    border-radius: 24px; /*redondea el boton*/
+    transition: 1s all; /*hace que el cambio todo loq eu estan en enviar:hover se aplique en un seundo*/
+    cursor: pointer; /*cambia el mouse por una manita*/
+}
